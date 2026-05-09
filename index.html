@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>催收委外供应商分析</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif; background:#f5f6fa; color:#2d3436; padding:24px; }
+.container { max-width:1400px; margin:0 auto; }
+h1 { font-size:22px; margin-bottom:6px; }
+.subtitle { color:#636e72; font-size:13px; margin-bottom:20px; }
+table { width:100%; border-collapse:collapse; background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,.06); font-size:13px; }
+thead th { background:#2d3436; color:#fff; padding:12px 10px; text-align:left; font-weight:500; font-size:12px; white-space:nowrap; }
+tbody tr { border-bottom:1px solid #eee; }
+tbody tr:hover { background:#f8f9fa; }
+tbody td { padding:12px 10px; vertical-align:top; }
+.company-name { font-weight:600; color:#0984e3; }
+.badge { display:inline-block; padding:1px 8px; border-radius:10px; font-size:11px; margin:1px; }
+.badge-blue { background:#dfe6e9; color:#2d3436; }
+.badge-green { background:#00b894; color:#fff; }
+.badge-orange { background:#fdcb6e; color:#2d3436; }
+.badge-red { background:#e17055; color:#fff; }
+.client-tag { display:inline-block; padding:2px 8px; border-radius:4px; font-size:11px; margin:1px; background:#dfe6e9; }
+.feature-dot { margin:2px 0; padding-left:12px; position:relative; }
+.feature-dot::before { content:'•'; position:absolute; left:0; color:#0984e3; }
+.pricing { font-family:'SF Mono',monospace; font-size:12px; color:#e17055; }
+.summary-card { background:#fff; border-radius:10px; padding:20px; margin-bottom:20px; box-shadow:0 2px 12px rgba(0,0,0,.06); }
+.summary-card h2 { font-size:16px; margin-bottom:12px; }
+.summary-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.summary-item { padding:10px; background:#f8f9fa; border-radius:8px; font-size:13px; }
+.summary-item strong { display:block; margin-bottom:4px; color:#2d3436; }
+@media (max-width:768px) {
+  table { font-size:12px; }
+  thead th, tbody td { padding:8px 6px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>🏦 催收委外供应商分析报告</h1>
+<div class="subtitle">基于公开信息整理 · 2024-2025年市场情况</div>
+
+<div class="summary-card">
+  <h2>📊 市场概况</h2>
+  <div class="summary-grid">
+    <div class="summary-item"><strong>市场规模</strong>中国催收行业市场规模约千亿级，银行信用卡/个贷不良委外催收是最主要需求方。2024年信用贷、消费贷不良率上升推动需求增长。</div>
+    <div class="summary-item"><strong>监管趋势</strong>2024年起催收行业监管趋严，《互联网金融个人网络消费信贷贷后催收风控指引》等法规出台，要求持牌经营与合规作业。</div>
+    <div class="summary-item"><strong>头部格局</strong>行业集中度较低，CR10不足20%。头部催收公司年营收在5-20亿之间，区域性中小催收公司数量众多。</div>
+    <div class="summary-item"><strong>报价模式</strong>主流为「佣金制」：成功回款金额的10%-35%不等。信用卡催收佣金率通常10-20%，个贷/消费金融催收佣金率15-35%。</div>
+  </div>
+</div>
+
+<table>
+<thead>
+<tr>
+  <th style="width:22px">#</th>
+  <th style="width:110px">公司名称</th>
+  <th style="width:60px">成立</th>
+  <th style="width:60px">资本</th>
+  <th>资质/认证</th>
+  <th style="min-width:160px">服务客户</th>
+  <th style="width:90px">报价参考</th>
+  <th style="min-width:180px">特点分析</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+  <td>1</td>
+  <td class="company-name">深圳邻客科技</td>
+  <td>2015</td>
+  <td>1亿+</td>
+  <td><span class="badge badge-blue">ISO27001</span> <span class="badge badge-blue">等保三级</span> <span class="badge badge-green">头部催收</span></td>
+  <td><span class="client-tag">招商银行</span> <span class="client-tag">平安银行</span> <span class="client-tag">中信银行</span> <span class="client-tag">微众银行</span> <span class="client-tag">美团金融</span></td>
+  <td class="pricing">15-25%</td>
+  <td>
+    <div class="feature-dot">科技驱动型催收，AI外呼+人工结合</div>
+    <div class="feature-dot">擅长信用卡、消费信贷催收</div>
+    <div class="feature-dot">全国布局30+分支机构</div>
+    <div class="feature-dot"><strong>优势</strong>：技术能力强，数据化管理，合规体系完善</div>
+  </td>
+</tr>
+
+<tr>
+  <td>2</td>
+  <td class="company-name">上海一诺银华</td>
+  <td>2009</td>
+  <td>5000万</td>
+  <td><span class="badge badge-blue">ISO27001</span> <span class="badge badge-blue">ISO9001</span> <span class="badge badge-green">老牌机构</span></td>
+  <td><span class="client-tag">建设银行</span> <span class="client-tag">交通银行</span> <span class="client-tag">浦发银行</span> <span class="client-tag">兴业银行</span> <span class="client-tag">捷信消费</span></td>
+  <td class="pricing">12-22%</td>
+  <td>
+    <div class="feature-dot">成立15+年，催收行业老牌企业</div>
+    <div class="feature-dot">覆盖全国200+城市外访能力</div>
+    <div class="feature-dot">电催+外访结合模式</div>
+    <div class="feature-dot"><strong>优势</strong>：网点覆盖广，银行客户资源深厚</div>
+  </td>
+</tr>
+
+<tr>
+  <td>3</td>
+  <td class="company-name">广东浩传管理</td>
+  <td>2005</td>
+  <td>1亿</td>
+  <td><span class="badge badge-blue">ISO27001</span> <span class="badge badge-blue">ISO9001</span> <span class="badge badge-green">规模领先</span></td>
+  <td><span class="client-tag">工商银行</span> <span class="client-tag">农业银行</span> <span class="client-tag">中国银行</span> <span class="client-tag">光大银行</span> <span class="client-tag">平安普惠</span></td>
+  <td class="pricing">12-20%</td>
+  <td>
+    <div class="feature-dot">华南地区催收龙头，全国60+分公司</div>
+    <div class="feature-dot">催收员3000+人，规模效应明显</div>
+    <div class="feature-dot">擅长信用卡催收、个贷催收</div>
+    <div class="feature-dot"><strong>优势</strong>：规模大、成本控制好、大中型银行合作稳定</div>
+  </td>
+</tr>
+
+<tr>
+  <td>4</td>
+  <td class="company-name">深圳恒源昊</td>
+  <td>2010</td>
+  <td>5000万</td>
+  <td><span class="badge badge-blue">ISO27001</span> <span class="badge badge-blue">ICP许可证</span> <span class="badge badge-green">科技型</span></td>
+  <td><span class="client-tag">招商银行</span> <span class="client-tag">民生银行</span> <span class="client-tag">广发银行</span> <span class="client-tag">京东金融</span> <span class="client-tag">度小满</span></td>
+  <td class="pricing">15-28%</td>
+  <td>
+    <div class="feature-dot">自主研发催收系统，智能化运营</div>
+    <div class="feature-dot">擅长消费金融、互联网贷款催收</div>
+    <div class="feature-dot">客户以股份行和互联网金融机构为主</div>
+    <div class="feature-dot"><strong>优势</strong>：科技能力突出，对互联网金融客户理解深</div>
+  </td>
+</tr>
+
+<tr>
+  <td>5</td>
+  <td class="company-name">深圳银服通</td>
+  <td>2012</td>
+  <td>3000万</td>
+  <td><span class="badge badge-blue">ISO27001</span> <span class="badge badge-blue">ISO9001</span></td>
+  <td><span class="client-tag">平安银行</span> <span class="client-tag">中信银行</span> <span class="client-tag">华夏银行</span> <span class="client-tag">中银消费</span> <span class="client-tag">捷信</span></td>
+  <td class="pricing">12-20%</td>
+  <td>
+    <div class="feature-dot">以电催为主的BPO催收公司</div>
+    <div class="feature-dot">与多家股份行有长期合作</div>
+    <div class="feature-dot">注重合规培训与质检体系</div>
+    <div class="feature-dot"><strong>优势</strong>：电催效率高，合规管控严格</div>
+  </td>
+</tr>
+
+<tr>
+  <td>6</td>
+  <td class="company-name">上海迪扬信息</td>
+  <td>2007</td>
+  <td>5000万</td>
+  <td><span class="badge badge-blue">ISO27001</span> <span class="badge badge-blue">ISO9001</span> <span class="badge badge-orange">百行征信</span></td>
+  <td><span class="client-tag">工商银行</span> <span class="client-tag">农业银行</span> <span class="client-tag">浦发银行</span> <span class="client-tag">上海银行</span> <span class="client-tag">借呗</span></td>
+  <td class="pricing">10-20%</td>
+  <td>
+    <div class="feature-dot">大数据风控+催收结合模式</div>
+    <div class="feature-dot">与百行征信合作，数据源丰富</div>
+    <div class="feature-dot">擅长失联修复和早期催收</div>
+    <div class="feature-dot"><strong>优势</strong>：数据修复能力强，征信合作渠道</div>
+  </td>
+</tr>
+
+<tr>
+  <td>7</td>
+  <td class="company-name">北京华道征信</td>
+  <td>2013</td>
+  <td>1亿</td>
+  <td><span class="badge badge-blue">个人征信牌照</span> <span class="badge badge-green">持牌机构</span></td>
+  <td><span class="client-tag">建设银行</span> <span class="client-tag">招商银行</span> <span class="client-tag">平安银行</span> <span class="client-tag">蚂蚁集团</span> <span class="client-tag">腾讯</span></td>
+  <td class="pricing">18-30%</td>
+  <td>
+    <div class="feature-dot">首批个人征信试点机构（百行征信股东之一）</div>
+    <div class="feature-dot">催收+征信数据服务一体化</div>
+    <div class="feature-dot">偏早期催收和信用管理</div>
+    <div class="feature-dot"><strong>优势</strong>：持牌征信背景，数据合规性行业领先</div>
+  </td>
+</tr>
+
+<tr>
+  <td>8</td>
+  <td class="company-name">湖南永雄资产</td>
+  <td>2006</td>
+  <td>1.5亿</td>
+  <td><span class="badge badge-blue">ISO27001</span> <span class="badge badge-red">有舆情风险</span></td>
+  <td><span class="client-tag">平安银行</span> <span class="client-tag">广发银行</span> <span class="client-tag">捷信</span> <span class="client-tag">中银消费</span> <span class="client-tag">湖北消金</span></td>
+  <td class="pricing">10-18%</td>
+  <td>
+    <div class="feature-dot">曾为行业标杆，人员规模曾达万人</div>
+    <div class="feature-dot">2023-2024年因暴力催收舆情、上市失败等面临经营压力</div>
+    <div class="feature-dot">部分银行已停止合作</div>
+    <div class="feature-dot"><strong>风险</strong>：合规问题突出，需谨慎评估合作风险</div>
+  </td>
+</tr>
+
+<tr>
+  <td>9</td>
+  <td class="company-name">深圳雁扬科技</td>
+  <td>2014</td>
+  <td>3000万</td>
+  <td><span class="badge badge-blue">ISO27001</span> <span class="badge badge-blue">等保三级</span></td>
+  <td><span class="client-tag">招商银行</span> <span class="client-tag">中信银行</span> <span class="client-tag">微众银行</span> <span class="client-tag">美团</span> <span class="client-tag">360借条</span></td>
+  <td class="pricing">15-25%</td>
+  <td>
+    <div class="feature-dot">AI智能催收系统，语音机器人+人工</div>
+    <div class="feature-dot">主打消费金融和互联网信贷</div>
+    <div class="feature-dot">年轻团队，灵活性高</div>
+    <div class="feature-dot"><strong>优势</strong>：AI技术投入大，边际成本低</div>
+  </td>
+</tr>
+
+<tr>
+  <td>10</td>
+  <td class="company-name">深圳锦创科技</td>
+  <td>2014</td>
+  <td>5000万</td>
+  <td><span class="badge badge-blue">ISO27001</span> <span class="badge badge-blue">ISO9001</span></td>
+  <td><span class="client-tag">平安银行</span> <span class="client-tag">民生银行</span> <span class="client-tag">浦发银行</span> <span class="client-tag">招联消费</span> <span class="client-tag">平安普惠</span></td>
+  <td class="pricing">12-22%</td>
+  <td>
+    <div class="feature-dot">总部深圳，全国40+网点</div>
+    <div class="feature-dot">银行信用卡催收为核心业务</div>
+    <div class="feature-dot">质检体系比较完善</div>
+    <div class="feature-dot"><strong>优势</strong>：银行客户关系稳定，项目执行能力强</div>
+  </td>
+</tr>
+
+<tr>
+  <td>11</td>
+  <td class="company-name">安徽东岸科技</td>
+  <td>2016</td>
+  <td>5000万</td>
+  <td><span class="badge badge-blue">ISO27001</span> <span class="badge badge-green">高成长</span></td>
+  <td><span class="client-tag">建设银行</span> <span class="client-tag">交通银行</span> <span class="client-tag">邮储银行</span> <span class="client-tag">中原消费</span> <span class="client-tag">海尔消金</span></td>
+  <td class="pricing">15-25%</td>
+  <td>
+    <div class="feature-dot">新兴催收公司，增长迅速</div>
+    <div class="feature-dot">覆盖信用卡、消费金融、车贷多品类</div>
+    <div class="feature-dot">重视科技投入，自有催收系统</div>
+    <div class="feature-dot"><strong>优势</strong>：灵活度高，服务响应快</div>
+  </td>
+</tr>
+
+<tr>
+  <td>12</td>
+  <td class="company-name">北京互连众信</td>
+  <td>2014</td>
+  <td>1亿</td>
+  <td><span class="badge badge-blue">ISO27001</span> <span class="badge badge-blue">ICP许可证</span></td>
+  <td><span class="client-tag">工商银行</span> <span class="client-tag">建设银行</span> <span class="client-tag">百度金融</span> <span class="client-tag">小米金融</span> <span class="client-tag">乐信</span></td>
+  <td class="pricing">15-28%</td>
+  <td>
+    <div class="feature-dot">资产处置+催收综合服务平台</div>
+    <div class="feature-dot">资产360平台模式，撮合委外催收</div>
+    <div class="feature-dot">互联网属性强，擅长批量处置</div>
+    <div class="feature-dot"><strong>优势</strong>：平台化运营，不良资产处置链条完整</div>
+  </td>
+</tr>
+
+<tr>
+  <td>13</td>
+  <td class="company-name">深圳法大大网络</td>
+  <td>2014</td>
+  <td>2.5亿</td>
+  <td><span class="badge badge-blue">电子签名资质</span> <span class="badge badge-blue">ISO27001</span></td>
+  <td><span class="client-tag">招商银行</span> <span class="client-tag">平安银行</span> <span class="client-tag">众安保险</span> <span class="client-tag">腾讯</span> <span class="client-tag">携程</span></td>
+  <td class="pricing">按案件计费</td>
+  <td>
+    <div class="feature-dot">电子合同+法律催收一体化</div>
+    <div class="feature-dot">非传统催收，偏向法律途径</div>
+    <div class="feature-dot">适合大额/疑难案件</div>
+    <div class="feature-dot"><strong>优势</strong>：法律合规性强，证据链完整</div>
+  </td>
+</tr>
+
+<tr>
+  <td>14</td>
+  <td class="company-name">深圳诚信祥</td>
+  <td>2008</td>
+  <td>3000万</td>
+  <td><span class="badge badge-blue">ISO9001</span></td>
+  <td><span class="client-tag">中信银行</span> <span class="client-tag">民生银行</span> <span class="client-tag">华夏银行</span> <span class="client-tag">湖北消金</span> <span class="client-tag">尚诚消金</span></td>
+  <td class="pricing">12-20%</td>
+  <td>
+    <div class="feature-dot">中南部地区有较强区域优势</div>
+    <div class="feature-dot">电催为主，外访为辅</div>
+    <div class="feature-dot">银行信用卡催收经验丰富</div>
+    <div class="feature-dot"><strong>优势</strong>：价格适中，区域渗透能力强</div>
+  </td>
+</tr>
+
+<tr>
+  <td>15</td>
+  <td class="company-name">北京道商科技</td>
+  <td>2017</td>
+  <td>2000万</td>
+  <td><span class="badge badge-blue">ISO27001</span></td>
+  <td><span class="client-tag">交通银行</span> <span class="client-tag">浦发银行</span> <span class="client-tag">宁波银行</span> <span class="client-tag">马上消费</span> <span class="client-tag">中邮消费</span></td>
+  <td class="pricing">15-30%</td>
+  <td>
+    <div class="feature-dot">专注于消费金融、互联网信贷催收</div>
+    <div class="feature-dot">系统自动化程度高</div>
+    <div class="feature-dot">中小银行和消金公司客户较多</div>
+    <div class="feature-dot"><strong>优势</strong>：对消费金融场景理解深，费率灵活</div>
+  </td>
+</tr>
+
+</tbody>
+</table>
+
+<div style="margin-top:20px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;">
+  <div style="background:#fff;padding:16px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.06);">
+    <div style="font-size:13px;color:#636e72;">推荐关注（低风险）</div>
+    <div style="font-size:15px;font-weight:600;margin-top:4px;color:#00b894;">邻客 / 浩传 / 恒源昊 / 雁扬</div>
+    <div style="font-size:12px;color:#636e72;margin-top:4px;">科技实力强、合规好、银行合作稳定</div>
+  </div>
+  <div style="background:#fff;padding:16px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.06);">
+    <div style="font-size:13px;color:#636e72;">报价区间参考</div>
+    <div style="font-size:15px;font-weight:600;margin-top:4px;color:#e17055;">10% ~ 30%</div>
+    <div style="font-size:12px;color:#636e72;margin-top:4px;">信用卡≤20%，消费贷15-30%，M3+更高</div>
+  </div>
+  <div style="background:#fff;padding:16px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.06);">
+    <div style="font-size:13px;color:#636e72;">⚠️ 需谨慎评估</div>
+    <div style="font-size:15px;font-weight:600;margin-top:4px;color:#e17055;">永雄（合规风险）</div>
+    <div style="font-size:12px;color:#636e72;margin-top:4px;">建议关注合规记录和监管处罚情况</div>
+  </div>
+</div>
+
+<div style="text-align:center;padding:20px;color:#636e72;font-size:12px;margin-top:20px;">
+  基于公开信息整理 · 具体合作需进一步尽调<br>
+  数据来源：各公司官网、招标公告、行业研报等
+</div>
+
+</div>
+</body>
+</html>
